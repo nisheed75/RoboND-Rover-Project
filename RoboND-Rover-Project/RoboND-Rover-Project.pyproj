@@ -1,0 +1,356 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>659c8a2e-27d5-4b78-bed6-7aba047ff8fb</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>code\drive_rover.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>RoboND-Rover-Project</Name>
+    <RootNamespace>RoboND-Rover-Project</RootNamespace>
+    <InterpreterId>Global|VisualStudio|UdacityRobotics</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="code\decision.py" />
+    <Compile Include="code\drive_rover.py" />
+    <Compile Include="code\perception.py" />
+    <Compile Include="code\supporting_functions.py" />
+    <Compile Include="RoboND_Rover_Project.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="calibration_images\" />
+    <Folder Include="code\" />
+    <Folder Include="code\.ipynb_checkpoints\" />
+    <Folder Include="code\__pycache__\" />
+    <Folder Include="misc\" />
+    <Folder Include="output\" />
+    <Folder Include="test_dataset\" />
+    <Folder Include="test_dataset\IMG\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="calibration_images\.DS_Store" />
+    <Content Include="calibration_images\example_grid1.jpg" />
+    <Content Include="calibration_images\example_grid2.jpg" />
+    <Content Include="calibration_images\example_rock1.jpg" />
+    <Content Include="calibration_images\example_rock2.jpg" />
+    <Content Include="calibration_images\map_bw.png" />
+    <Content Include="code\.DS_Store" />
+    <Content Include="code\.ipynb_checkpoints\Rover_Project_Test_Notebook-checkpoint.ipynb" />
+    <Content Include="code\Rover_Project_Test_Notebook.ipynb" />
+    <Content Include="code\__pycache__\decision.cpython-35.pyc" />
+    <Content Include="code\__pycache__\output_images.cpython-35.pyc" />
+    <Content Include="code\__pycache__\perception.cpython-35.pyc" />
+    <Content Include="code\__pycache__\supporting_functions.cpython-35.pyc" />
+    <Content Include="misc\rover_image.jpg" />
+    <Content Include="output\.DS_Store" />
+    <Content Include="output\test_mapping.mp4" />
+    <Content Include="test_dataset\.DS_Store" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_21_421.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_21_455.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_21_499.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_21_554.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_21_611.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_21_662.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_21_715.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_21_766.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_21_819.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_21_859.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_21_923.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_21_970.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_22_022.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_22_070.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_22_124.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_22_170.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_22_216.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_22_267.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_22_311.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_22_359.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_22_406.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_22_455.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_22_503.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_22_551.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_22_595.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_22_643.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_22_691.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_22_735.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_22_778.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_22_827.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_22_875.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_22_923.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_22_970.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_23_015.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_23_055.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_23_102.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_23_146.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_23_195.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_23_243.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_23_292.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_23_354.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_23_411.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_23_455.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_23_513.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_23_555.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_23_599.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_23_646.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_23_695.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_23_743.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_23_791.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_23_838.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_23_886.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_23_935.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_23_983.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_24_031.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_24_087.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_24_131.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_24_187.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_24_231.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_24_287.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_24_334.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_24_379.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_24_426.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_24_475.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_24_519.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_24_567.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_24_611.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_24_666.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_24_716.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_24_766.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_24_811.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_24_858.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_24_907.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_24_958.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_25_006.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_25_051.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_25_099.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_25_146.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_25_195.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_25_246.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_25_296.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_25_342.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_25_391.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_25_438.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_25_487.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_25_534.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_25_579.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_25_626.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_25_675.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_25_723.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_25_771.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_25_814.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_25_863.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_25_911.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_25_959.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_26_006.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_26_055.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_26_103.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_26_151.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_26_198.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_26_246.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_26_294.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_26_343.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_26_391.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_26_438.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_26_487.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_26_535.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_26_583.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_26_631.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_26_683.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_26_731.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_26_779.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_26_826.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_26_875.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_26_923.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_26_979.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_27_026.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_27_075.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_27_122.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_27_171.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_27_219.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_27_266.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_27_311.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_27_359.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_27_406.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_27_455.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_27_498.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_27_547.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_27_594.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_27_642.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_27_691.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_27_739.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_27_786.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_27_838.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_27_887.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_27_935.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_27_982.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_28_026.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_28_075.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_28_119.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_28_166.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_28_216.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_28_263.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_28_311.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_28_358.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_28_407.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_28_456.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_28_499.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_28_547.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_28_595.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_28_643.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_28_691.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_28_735.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_28_778.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_28_827.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_28_871.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_28_915.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_28_963.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_29_011.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_29_059.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_29_102.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_29_151.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_29_194.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_29_243.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_29_287.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_29_332.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_29_375.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_29_421.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_29_467.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_29_511.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_29_555.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_29_599.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_29_650.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_29_699.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_29_739.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_29_782.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_29_826.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_29_875.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_29_919.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_29_967.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_30_014.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_30_059.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_30_106.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_30_151.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_30_199.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_30_254.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_30_299.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_30_344.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_30_391.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_30_436.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_30_478.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_30_527.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_30_575.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_30_619.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_30_662.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_30_706.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_30_751.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_30_802.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_30_851.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_30_891.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_30_931.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_30_975.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_31_022.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_31_066.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_31_120.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_31_174.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_31_215.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_31_271.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_31_327.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_31_371.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_31_422.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_31_464.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_31_515.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_31_571.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_31_619.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_31_671.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_31_721.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_31_766.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_31_806.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_31_859.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_31_899.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_31_944.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_31_990.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_32_031.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_32_075.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_32_126.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_32_175.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_32_231.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_32_272.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_32_327.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_32_378.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_32_439.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_32_479.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_32_531.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_32_582.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_32_623.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_32_670.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_32_719.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_32_771.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_32_827.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_32_871.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_32_911.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_32_955.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_32_996.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_33_055.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_33_099.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_33_143.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_33_186.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_33_230.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_33_271.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_33_326.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_33_372.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_33_427.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_33_471.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_33_516.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_33_558.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_33_600.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_33_651.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_33_702.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_33_743.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_33_791.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_33_840.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_33_899.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_33_946.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_33_986.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_34_035.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_34_086.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_34_131.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_34_175.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_34_226.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_34_271.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_34_327.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_34_379.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_34_419.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_34_462.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_34_510.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_34_555.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_34_607.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_34_659.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_34_707.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_34_755.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_34_800.jpg" />
+    <Content Include="test_dataset\IMG\robocam_2017_05_02_11_16_34_842.jpg" />
+    <Content Include="test_dataset\robot_log.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|VisualStudio|UdacityRobotics" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

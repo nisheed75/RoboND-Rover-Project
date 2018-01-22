@@ -192,7 +192,7 @@ if __name__ == '__main__':
         help='Path to image folder. This is where the images from the run will be saved.'
     )
     args = parser.parse_args()
-    
+    #args.image_folder = "C:\\repo\\Udacity_Robotics\\RoboND-Rover-Project\\RoboND-Rover-Project\\output\\recording\\"
     #os.system('rm -rf IMG_stream/*')
     if args.image_folder != '':
         print("Creating image folder at {}".format(args.image_folder))
