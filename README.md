@@ -328,6 +328,8 @@ def process_image(img):
     
     return output_image
 ```
+Here is a link to the video output for this function:
+[![Process Images Video output](https://github.com/nisheed75/RoboND-Rover-Project/blob/master/RoboND-Rover-Project/output/test_mapping.mp4)
 
 
 ### Autonomous Navigation and Mapping
