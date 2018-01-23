@@ -27,7 +27,7 @@
 [image3]: ./images/screen_resolution.png 
 [image4]: ./images/coord_transform_3.png 
 [image5]: ./images/coord_transform_4.png 
-[image6]: ./images/example_grid_1.png
+[image6]: ./images/example_grid1.png
 [image7]: ./images/example_rock1.png
 [image8]: ./images/find_rocks_1.png
 [image9]: ./images/find_rocks_2.png
@@ -50,7 +50,7 @@ You're reading it!
 #### 1. Run the functions provided in the notebook on test images (first with the test data provided, next on data you have recorded). Add/modify functions to allow for color selection of obstacles and rock samples.
 ##### Perspective Transform
 Here is the example grid image that I use to show the output when it is processed with my perspective transform function:
-![Eampe grid][image6]
+![Example grid][image6]
 
 The perspective transform function takes a source and destination set of points and outputs the bird's eye or top-down view of the image.
 
