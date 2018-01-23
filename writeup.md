@@ -86,7 +86,7 @@ Bottom Row:
 Image 1: thresholded image to see the navigable terrain
 Image 2: The image transformed to the rover coords.
 
-[Example output images]: ./images/coord_transform_1.png
+![Example output images] [./images/coord_transform_1.png]
 
 ##### Find Rocks
 A function was also defined to find rocks, again a thresholding technique was used since rock have an RGB pattern that can be identified with the values below.  
