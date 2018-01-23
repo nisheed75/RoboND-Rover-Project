@@ -78,11 +78,11 @@ The code for the ```python rover_coords(binary_img), to_polar_coords(x_pixel, y_
 translate_pix(xpix_rot, ypix_rot, xpos, ypos, scale), and pix_to_world(xpix, ypix, xpos, ypos, yaw, world_size, scale)  ``` is located  in the ./RoboND-Rover-Project/code folder in the perception.py file.
 
 Here are example output images of each function:
-######TopRow:
+###### TopRow:
 Image 1: is the original image
 Image 2: is the warped image from the perspective transform is the mask applied.
 
-######Bottom Row: 
+###### Bottom Row: 
 Image 1: thresholded image to see the navigable terrain
 Image 2: The image transformed to the rover coords.
 
